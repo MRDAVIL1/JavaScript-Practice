@@ -28,17 +28,7 @@ let userpin = prompt("Enter Your Pin");
 
 
 if (userpin === correctpin){
-    alert("Pin is correct");
-}
-
-else if(userpin !== correctpin){
-    alert("Your ATM Card is Block Go Back..");
-}
-else{
-    alert("Incorrect PIN!");
-}
-
-let choice = prompt(
+    let choice = prompt(
   "Welcome to JS ATM 💳\n\n" +
   "1️⃣ Check_Balance\n" +
   "2️⃣ Withdraw\n" +
@@ -46,7 +36,6 @@ let choice = prompt(
   "4️⃣ Exit\n\n" +
   "Enter your choice (1-4):"
 );
-
 
 if (choice === "1"){
     alert("Your Balance is: $" + balance);
@@ -63,6 +52,15 @@ else if(choice === "4"){
 else{
     alert("Invalid option!");
 }
+
+}
+
+
+else{
+    alert("Incorrect PIN!");
+}
+
+
 
 
 
